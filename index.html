@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nvard & Arsho | Wedding Invitation</title>
+<meta name="description" content="Wedding invitation of Nvard & Arsho — 29 October 2026">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Parisienne&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ivory: #FAF5EE;
+    --paper: #FFFCF8;
+    --ink: #2E2530;
+    --muted: #71606A;
+
+    --burgundy: #7C2D3B;
+    --gold: #A8834A;
+    --gold-soft: #D8C39E;
+    --sage: #8C9A80;
+
+    --line: #E3D6C6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--ivory);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.container {
+    width: min(1080px, 90%);
+    margin: auto;
+}
+
+.section {
+    padding: 130px 0;
+}
+
+.section.paper {
+    background: var(--paper);
+}
+
+.section-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 4.4vw, 54px);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--ink);
+}
+
+.center {
+    text-align: center;
+}
+
+/* signature ornament: hairline — diamond — hairline, the single recurring motif */
+.ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 22px 0;
+}
+
+.ornament .rule {
+    height: 1px;
+    width: 56px;
+    background: var(--gold);
+    opacity: .55;
+}
+
+.ornament .mark {
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--gold);
+    transform: rotate(45deg);
+}
+
+.ornament.left {
+    justify-content: flex-start;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 28px 0;
+    transition: .4s;
+    color: var(--ink);
+}
+
+.nav.scrolled {
+    background: rgba(250, 245, 238, .96);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+}
+
+.nav-inner {
+    width: min(1140px, 90%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: .5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    font-size: 12px;
+    font-variant: small-caps;
+    letter-spacing: .5px;
+}
+
+.nav-links a {
+    opacity: .9;
+    transition: .2s;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    border-color: currentColor;
+}
+
+.lang {
+    border: 1px solid currentColor;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding: 6px 12px;
+    opacity: .85;
+}
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: none;
+    color: inherit;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ivory);
+    color: var(--ink);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(700px, 88%);
+    text-align: center;
+}
+
+.eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 18px;
+}
+
+.names {
+    font-family: 'Parisienne';
+    font-size: clamp(52px, 8vw, 96px);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--ink);
+}
+
+.names em {
+    font-style: italic;
+    color: var(--burgundy);
+    padding: 0 10px;
+}
+
+.hero-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 34px;
+    padding: 13px 30px;
+    border: 1px solid var(--burgundy);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    color: var(--burgundy);
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    color: var(--muted);
+    z-index: 2;
+}
+
+.scroll-down:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    margin: 10px auto 0;
+    background: var(--gold);
+    opacity: .6;
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: .85fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.story-visual {
+    position: relative;
+    min-height: 480px;
+}
+
+.frame {
+    /* position: absolute; */
+    border: 1px solid var(--gold);
+    padding: 10px;
+}
+
+.frame span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(160deg, #EFE3D2, #E4D6C0);
+}
+
+.frame-main {
+    width: 100%;
+    height: 420px;
+    left: 0;
+    top: 0;
+}
+
+.frame-small {
+    width: 46%;
+    height: 220px;
+    right: 0;
+    bottom: -40px;
+    background: var(--paper);
+}
+
+.frame-small span {
+    background: linear-gradient(160deg, #DCE3D3, #EFE3D2);
+}
+
+.story-text {
+    margin: 24px 0 36px;
+    max-width: 480px;
+    line-height: 1.9;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.timeline {
+    border-left: 1px solid var(--line);
+    padding-left: 26px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+}
+
+.timeline-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--burgundy);
+}
+
+.timeline-desc {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+
+.detail {
+    text-align: center;
+    padding: 10px 35px;
+    border-right: 1px solid var(--line);
+}
+
+.detail:last-child {
+    border-right: 0;
+}
+
+.detail-icon {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: var(--gold);
+}
+
+.detail h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--ink);
+}
+
+.detail p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 14px;
+    border-bottom: 1px solid var(--burgundy);
+    color: var(--burgundy);
+    padding-bottom: 2px;
+    font-size: 11px;
+    letter-spacing: .5px;
+    transition: .25s;
+}
+
+.map-btn:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-wrap {
+    width: min(760px, 100%);
+    margin: 70px auto 0;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 36px 0;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.time {
+    border-right: 1px solid var(--line);
+}
+
+.time:last-child {
+    border-right: 0;
+}
+
+.time strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--burgundy);
+}
+
+.time span {
+    font-size: 10px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: var(--muted);
+}
+
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.rsvp-copy p {
+    max-width: 440px;
+    margin-top: 24px;
+    color: var(--muted);
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.form {
+    display: grid;
+    gap: 26px;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+    padding: 10px 2px;
+    outline: none;
+    color: var(--ink);
+    transition: .25s;
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: #A6949C;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: var(--burgundy);
+}
+
+.radio-row {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    padding: 4px 0;
+}
+
+.radio-row label {
+    font-size: 13px;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.radio-row input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.submit {
+    justify-self: start;
+    border: 1px solid var(--burgundy);
+    background: none;
+    color: var(--burgundy);
+    padding: 13px 28px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.submit:hover {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.submit:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   BOTTOM GRID
+========================= */
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.dress-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.dress {
+    padding: 22px;
+    border: 1px solid var(--line);
+    min-width: 150px;
+}
+
+.dress-icon {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dress p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.play {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--burgundy);
+    color: var(--burgundy);
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 13px;
+}
+
+.play:hover {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.music strong {
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.music small {
+    color: var(--muted);
+}
+
+.final-message .script {
+    font-family: 'Parisienne', cursive;
+    font-size: 42px;
+    color: var(--burgundy);
+    margin-top: 18px;
+}
+
+.final-message small {
+    color: var(--muted);
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 4px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 28px;
+    text-align: center;
+    background: var(--ink);
+    color: var(--gold-soft);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: var(--ink);
+    color: var(--ivory);
+    border: 1px solid var(--gold);
+    padding: 15px 22px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: .3s;
+    z-index: 2000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(250, 245, 238, .98);
+        color: var(--ink);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-frame { inset: 14px; }
+    .corner { display: none; }
+
+    .story-grid,
+    .rsvp-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .story-visual {
+        min-height: 400px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 22px;
+    }
+
+    .detail:last-child {
+        border-bottom: 0;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .time {
+        border-right: 0;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .names {
+        font-size: 52px;
+    }
+
+    .story-visual {
+        min-height: 340px;
+    }
+
+    .frame-main {
+        height: 300px;
+    }
+
+    .frame-small {
+        height: 170px;
+    }
+
+    .time strong {
+        font-size: 38px;
+    }
+
+    .dress-list {
+        flex-direction: column;
+    }
+
+    .dress {
+        width: 100%;
+    }
+
+    .toast {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#home" class="logo">N &amp; A</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#details">Details</a>
+            <a href="#rsvp">RSVP</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="hero-content">
+        <div class="eyebrow">A wedding celebration</div>
+
+        <h1 class="names">Nvard <em>&amp;</em> Arsho</h1>
+
+        <div class="hero-date">29 · OCTOBER · 2026</div>
+
+        <a href="#details" class="hero-btn">Save the Date</a>
+    </div>
+
+    <a href="#story" class="scroll-down">Scroll</a>
+</header>
+
+<section class="section paper" id="story">
+    <div class="container story-grid">
+        <div class="story-visual">
+            <div class="frame frame-main"><span>
+        <img src="./img/we.png" alt="Nvard & Arsho" style="width:100%; height:100%; object-fit:cover; border-radius:2px;"></span></div>
+            </span></div>
+                  <div>
+            <div class="section-label">Our story</div>
+            <h2 class="section-title">Two hearts,<br>one journey</h2>
+            <p class="story-text">
+                It all started with a simple conversation that turned into endless
+                talks, laughter and dreams. From that moment, we knew life was
+                better together. Now we are ready to begin our next chapter,
+                surrounded by the people we love.
+            </p>
+        </div>
+        </div>
+  
+    </div>
+</section>
+
+<section class="section" id="details">
+    <div class="container">
+        <div class="center">
+            <div class="section-label">Wedding details</div>
+            <h2 class="section-title">The Big Day</h2>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail">
+                <div class="detail-icon">✦</div>
+                <h3>Ceremony</h3>
+                <p>Church Name<br>15:00</p>
+            </div>
+
+            <div class="detail">
+                <div class="detail-icon">✦</div>
+                <h3>Reception</h3>
+                <p>Wedding Hall<br>18:00</p>
+            </div>
+
+            <div class="detail">
+                <div class="detail-icon">✦</div>
+                <h3>Location</h3>
+                <p>Yerevan, Armenia</p>
+                <a href="https://www.google.com/maps" target="_blank" class="map-btn">
+                    View on Google Maps
+                </a>
+            </div>
+        </div>
+
+        <div class="countdown-wrap">
+            <div class="section-label">Until we say "I do"</div>
+
+            <div class="countdown">
+                <div class="time">
+                    <strong id="days">00</strong>
+                    <span>Days</span>
+                </div>
+                <div class="time">
+                    <strong id="hours">00</strong>
+                    <span>Hours</span>
+                </div>
+                <div class="time">
+                    <strong id="minutes">00</strong>
+                    <span>Minutes</span>
+                </div>
+                <div class="time">
+                    <strong id="seconds">00</strong>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section paper" id="rsvp">
+    <div class="container rsvp-grid">
+        <div class="rsvp-copy">
+            <div class="section-label">Rsvp</div>
+            <h2 class="section-title">Will you join us?</h2>
+            <p>
+                Please let us know if you will be celebrating this special day
+                with us. We cannot wait to celebrate together.
+            </p>
+        </div>
+
+        <form class="form" id="rsvpForm">
+            <input type="text" id="guestName" name="name" placeholder="Your full name *" required>
+
+            <select id="guestCount" name="guests" required>
+                <option value="">Number of guests *</option>
+                <option>1 guest</option>
+                <option>2 guests</option>
+                <option>3 guests</option>
+                <option>4 guests</option>
+                <option>5+ guests</option>
+            </select>
+
+            <div class="radio-row">
+                <label>
+                    <input type="radio" name="attendance" value="yes" checked>
+                    Yes, I'll be there!
+                </label>
+
+                <label>
+                    <input type="radio" name="attendance" value="no">
+                    Sorry, can't make it
+                </label>
+            </div>
+
+            <button class="submit" type="submit">Send RSVP</button>
+        </form>
+    </div>
+</section>
+
+<section class="section paper">
+    <div class="container bottom-grid">
+        <div>
+            <div class="section-label">Dress code</div>
+            <h2 class="section-title" style="font-size:36px">Dress to Impress</h2>
+
+            <div class="dress-list">
+                <div class="dress">
+                    <div class="dress-icon">✦</div>
+                    <p>Women<br>Elegant / Cocktail</p>
+                </div>
+                <div class="dress">
+                    <div class="dress-icon">✦</div>
+                    <p>Men<br>Suit / Dress Shirt</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="section-label">Wedding playlist</div>
+            <h2 class="section-title" style="font-size:36px">Let's dance together</h2>
+
+            <div class="music">
+                <button class="play" id="playBtn">▶</button>
+                <div>
+                    <strong>Our Wedding Song</strong><br>
+                    <small id="musicText">Press play and feel the vibe</small>
+                </div>
+            </div>
+
+            <audio id="audio" loop>
+                <!-- Replace with your music file -->
+                <source src="./music/music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="final-message center">
+            <div class="section-label">With love</div>
+            <h2 class="section-title" style="font-size:36px">
+                Your presence<br>is the best gift
+            </h2>
+            <div class="script">Nvard &amp; Arsho</div>
+            <small>29.10.2026</small>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    Nvard &amp; Arsho &nbsp;·&nbsp; 29.10.2026
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================
+   NAVIGATION
+========================= */
+var nav = document.getElementById("nav");
+var menuBtn = document.getElementById("menuBtn");
+var navLinks = document.getElementById("navLinks");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
+
+menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("open");
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+    });
+});
+
+/* =========================
+   COUNTDOWN
+========================= */
+var weddingDate = new Date("October 29, 2026 15:00:00").getTime();
+
+function updateCountdown() {
+    var now = new Date().getTime();
+    var distance = weddingDate - now;
+
+    if (distance <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+        return;
+    }
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    var minutes = Math.floor((distance / (1000 * 60)) % 60);
+    var seconds = Math.floor((distance / 1000) % 60);
+
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* =========================
+   RSVP
+========================= */
+var form = document.getElementById("rsvpForm");
+var toast = document.getElementById("toast");
+
+function showToast(message) {
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(function () {
+        toast.classList.remove("show");
+    }, 3000);
+}
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var name = document.getElementById("guestName").value.trim();
+    var count = document.getElementById("guestCount").value;
+    var attendance = document.querySelector(
+        'input[name="attendance"]:checked'
+    ).value;
+
+    if (!name || !count) {
+        showToast("Please fill in all required fields.");
+        return;
+    }
+
+    var submitButton = form.querySelector(".submit");
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    fetch("https://script.google.com/macros/s/AKfycbyB_0wAq74OJ65Sjlr-g5olcFYjLRolaSuUjArEoAWjLn4mr7nCvvZJBgXP-xMFgTSaqg/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+        },
+        body: JSON.stringify({
+            name: name,
+            guests: count,
+            attendance: attendance === "yes"
+                ? "Yes, I'll be there!"
+                : "Sorry, can't make it"
+        })
+    })
+    .then(function () {
+
+        showToast(
+            attendance === "yes"
+                ? "Thank you, " + name + "! We can't wait to see you"
+                : "Thank you for letting us know, " + name + "."
+        );
+
+        form.reset();
+    })
+    .catch(function () {
+
+        showToast("Unable to send RSVP. Please try again.");
+
+    })
+    .finally(function () {
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Send RSVP";
+
+    });
+});
+
+
+/* =========================
+   MUSIC
+   Add your mp3 source above
+========================= */
+var audio = document.getElementById("audio");
+var playBtn = document.getElementById("playBtn");
+var musicText = document.getElementById("musicText");
+
+playBtn.addEventListener("click", function () {
+    if (audio.paused) {
+        audio.play();
+        playBtn.textContent = "Ⅱ";
+        musicText.textContent = "Playing our song";
+    } else {
+        audio.pause();
+        playBtn.textContent = "▶";
+        musicText.textContent = "Press play and feel the vibe";
+    }
+});
+
+</script>
+
+</body>
+</html>
